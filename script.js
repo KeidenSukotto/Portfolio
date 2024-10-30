@@ -20,3 +20,8 @@ nav.querySelectorAll('a').forEach(link => {
     navIcon.style.display = 'block';
   });
 });
+
+window.addEventListener('scroll', () => {
+  nav.style.display = 'none';
+  navIcon.style.display = 'block';
+});
