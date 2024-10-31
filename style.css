@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Inter, sans-serif;
+    background: #171717;
+    font-size: 1.6rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.section-title {
+    color: white;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    padding: 10rem 0rem;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Sections */
+
+.section-title {
+    display: none;
+}
+
+/* Home Section */
+
+#home {
+    flex-direction: column;
+}
+
+.nav-icon {
+    display: none;
+}
+
+.navlinks .navlink:nth-child(5) {
+    display: none;
+}
+
+nav {
+    position: fixed;
+    top: 4rem;
+    height: fit-content;
+    width: fit-content;
+}
+
+.navlinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    
+    background-color: #171717;
+    padding: 1.2rem 4rem;
+    border-radius: 13px;
+    box-shadow: 0 0 0 1.5px rgb(255, 255, 255, 0.10);
+}
+
+.navlink > a {
+    color: #CFCFCF;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+}
+
+.name {
+    color: white;
+    font-size: 7.2rem;
+    font-weight: 400;
+    text-transform: capitalize;
+
+}
+
+.title {
+    color: #858585;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+/* About section */
+
+#about {
+    height: 100vh;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 13px;
+    box-shadow: 0 0 0 1.5px rgb(255, 255, 255, 0.10);
+}
+
+.location-resume {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    padding-left: 0.5rem;
+}
+
+.location > svg {
+    color: #9CA3AF;
+}
+
+.location > p {
+    color: #9CA3AF;
+    text-transform: capitalize;
+}
+
+.description {
+    width: 80rem;
+    padding: 2rem 0;
+}
+
+.description > p {
+    color: white;
+    font-weight: 300;
+    text-align: justify;
+    hyphens: auto;
+}
+
+.resume {
+    color: #9CA3AF;
+    text-transform: capitalize;
+    margin-left: auto;
+}
+
+/* Stack Section */
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 5rem;
+    border-radius: 13px;
+    box-shadow: 0 0 0 1.5px rgb(255, 255, 255, 0.10);
+}
+
+.icon-row {
+    display: flex;
+    gap: 20rem;
+}
+
+.icon {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+    width: 50%;
+}
+
+.icon > img {
+    height: 3rem;
+    width: 3rem;
+}
+
+.icon-info > h4 {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.icon-info > p {
+    color: rgb(255, 255, 255, 0.5);
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* Projects Section */
+
+#projects {
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.project-cards-row {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+    width: 80rem;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 1.5rem;
+    border-radius: 13px;
+    box-shadow: 0 0 0 1.5px rgb(255, 255, 255, 0.10);
+}
+
+.project-image > img {
+    height: 10rem;
+    width: 100%;
+    border-radius: 13px 13px 0 0;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0 0 1rem 1rem;
+}
+
+.project-info > h4 {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    color: white;
+}
+
+.project-info > p {
+    font-size: 1rem;
+    color: rgb(255, 255, 255, 0.5);
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-links {
+    position: fixed;
+    bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
