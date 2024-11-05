@@ -10,7 +10,23 @@ html {
 body {
     font-family: Inter, sans-serif;
     background: #171717;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    overflow-x: hidden;
+
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    margin: 0;
+    padding: 0;
+}
+
+
+html, body {
+    overflow: hidden;
 }
 
 a {
@@ -33,7 +49,8 @@ section {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    width: 100%;
+    scroll-snap-align: start;
+    transition: transform 0.5s ease-in-out;
 }
 
 /* Sections */
@@ -77,7 +94,7 @@ nav {
 
 .navlink > a {
     color: #CFCFCF;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-weight: 300;
     text-transform: capitalize;
 }
